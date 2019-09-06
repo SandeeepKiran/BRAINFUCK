@@ -1,0 +1,6 @@
+multiply x*y
+> , ------------------------------------------------ x value ~takes input value and removes the ascii code
+> , ------------------------------------------------ y value ~takes input value and removes the ascii code
+<[>[> + >+<<-]>>            here I use the 3rd cell for result, and to iterate the y value (I use a 4th cell to copy paste the y value again) ~cause the brackets only move forward after the cell becomes zero (meaning i lost the y value when iterating) ~so the 4th cell is like a spare
+[<<+>>-]<<                  re~add 4th cell value (the copy of y value I made) into the 2nd cell {aren't I genius?}
+<-]                         go to 1st cell (that has x value) and loop till zero
